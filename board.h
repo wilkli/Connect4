@@ -65,7 +65,6 @@ public:
     // Topics: arrays
     PieceType atLocation(int row, int col);
 
-
     // Effects: Returns the player to move (1 for player 1, 2 for player 2)
     // Difficulty: Easy
     // Topics: member functions
@@ -80,6 +79,12 @@ public:
     // Topics: Use of private helper functions
     // Calls: getFirstFreeRow, updateToMove, isBoardFull, isWin
     Result makeMove(int col);
+    
+    
+    bool isColFull(int col) const;
+    
+    PieceType at(int row, int col) const;
+    
 
 private:
     // Requires: col must be inbounds of array
